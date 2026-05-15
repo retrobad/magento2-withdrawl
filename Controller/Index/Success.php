@@ -33,7 +33,7 @@ class Success implements HttpGetActionInterface
         }
 
         $page = $this->pageFactory->create();
-        $page->getConfig()->getTitle()->set(__('Withdrawal Submitted Successfully'));
+        $page->getConfig()->getTitle()->set(__('Withdrawal Successfully Submitted'));
         return $page;
     }
 }

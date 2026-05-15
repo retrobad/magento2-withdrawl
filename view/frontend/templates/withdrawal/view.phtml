@@ -50,6 +50,7 @@ $partialAllowed = $block->isPartialWithdrawalAllowed();
                         <span><?= $block->escapeHtml(__('All items of this order have already been withdrawn.')) ?></span>
                     </div>
                 <?php elseif ($block->isWithdrawalAllowed()): ?>
+                    <p><?= $block->escapeHtml(__('Consumers have the right to withdraw within fourteen days')) ?>.</p>
                     <?php $deadline = $block->getWithdrawalDeadline(); ?>
                     <div class="withdrawal-deadline" style="margin-bottom: 15px;">
                         <?php if ($partialAllowed): ?>
